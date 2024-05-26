@@ -1,0 +1,138 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.525);
+    position: relative;
+}
+
+@media(max-width:1200px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media(max-width:1000px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media(max-width:850px) {
+    .container {
+        width: 95%;
+    }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+p,
+ul,
+ol {
+    margin: 10px 0;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+}
+
+strong {
+    color: #333;
+}
+
+ol a{
+    text-wrap: wrap;
+    word-wrap: break-word;
+}
+
+ol p{
+    margin: 0;
+    text-align: justify;
+}
+
+.year {
+    float: right;
+    font-style: italic;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container {
+    background: #1e1e1e;
+    box-shadow: 1px 1px 10px rgba(181, 180, 180, 0.765);
+}
+
+body.dark-mode h2 {
+    background: #444;
+}
+
+body.dark-mode a {
+    color: #bb86fc;
+}
+
+body.dark-mode strong{
+    color: #e0e0e0;
+}
+
+#toggle-dark-mode{
+    position: absolute;
+    left: 100%;
+    top: 5px;
+    transform: translateX(-110%);
+    padding: 3px 10px;
+    cursor: pointer;
+    background-color: #adb5bd;
+    color: black;
+    font-weight: 550;
+    border: none;
+}
